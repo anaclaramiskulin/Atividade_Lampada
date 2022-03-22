@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade três lâmpada</title>
+</head>
+
+        <img id="lampada" src="./imagem/lampada-off.gif">
+        <img id="interruptor" src="./imagem/interruptorDesligado.jpeg">
+                
+    <script>
+        document.body.style.backgroundColor = 'black';
+        var element  = document.querySelector("#interruptor")    
+        element.onclick = function(){
+            if(element.src.match("on")){
+                element.src="./imagem/lampada-off.gif";
+                element.src="./imagem/interruptorDesligado.jpeg";
+                
+            } 
+            else{
+
+                element.src="./imagem/lampada-on.gif";
+                element.src="./imagem/InterruptorLigado.jpeg";
+                document.body.style.backgroundColor = '#fff';
+                
+            }
+        }
+    </script>
+
+
+</html>
